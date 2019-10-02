@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Localizar em Londrina
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <section class="quando">
+    <header>Quando?</header>
+    <ion-button (click)="presentToast()" size="small">Todos</ion-button>
+    <ion-button (click)="presentToast()"size="small">Hoje</ion-button>
+    <ion-button (click)="presentToast()"size="small">Amanha</ion-button>
+    <ion-button (click)="presentToastWithOptions()"size="small">Esta semana</ion-button>
+    <ion-button (click)="presentToastWithOptions()"size="small">Este mês</ion-button>
+  </section>
+
+  <section class="inicio">
+    <header>O que?</header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button>
+          <ion-icon name="star"></ion-icon>
+            <ion-label>Todos</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="beer"></ion-icon>
+            <ion-label>Festas e Shows</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="football"></ion-icon>
+            <ion-label>Esportes</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="brush"></ion-icon>
+            <ion-label>Arte e Cultura</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="pizza"></ion-icon>
+            <ion-label>Comida</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="analytics"></ion-icon>
+            <ion-label>Negocios</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <section>
+    <ion-card>
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label>Perto de você</ion-label>
+        <ion-button fill="outline" slot="end">Ver</ion-button>
+      </ion-item>
+
+      <img src="assets/file.png" alt="">
+    </ion-card>
+  </section>
+</ion-content>

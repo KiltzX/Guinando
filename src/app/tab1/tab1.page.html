@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <section>
+    <div></div>
+    <header>O que?</header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cafe" ></ion-icon>
+            <ion-label>Arábica</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cafe" ></ion-icon>
+            <ion-label>Bourbon</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cafe" color="secondary"></ion-icon>
+            <ion-label>Kona</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cafe" color="secondary"></ion-icon>
+            <ion-label>Catuaí</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cafe" color="secondary"></ion-icon>
+            <ion-label>Acaiá</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cafe" color="secondary"></ion-icon>
+            <ion-label>Conilon</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+
+  <section>
+    <header>Corredores</header>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button (click)="openCamera()">
+            <ion-icon name="home" color="primary"></ion-icon>
+            <ion-label>Centro Historico</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button (click)="openCamera()">
+            <ion-icon name="business" color="primary"></ion-icon>
+            <ion-label>IBC</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="restaurant" color="primary"></ion-icon>
+            <ion-label>Baixa Gastronomia</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button (click)="openCamera()">
+            <ion-icon name="rocket" color="primary"></ion-icon>
+            <ion-label>Londrinando</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="cog" color="primary"></ion-icon>
+            <ion-label>Rota do café</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button>
+            <ion-icon name="heart" color="primary"></ion-icon>
+            <ion-label>Parques</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+</ion-content>
